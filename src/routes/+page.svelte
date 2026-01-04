@@ -112,10 +112,10 @@
 
 		<!-- Main heading - Clean typography -->
 		<h1
-			class="fade-in-up fade-in-delay-2 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-white mb-6 leading-[1.1] tracking-tight"
+			class="fade-in-up fade-in-delay-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-white mb-6 leading-[1.1] tracking-tight"
 		>
 			Dönüşüm
-			<span class="relative inline-block ml-2">
+			<span class="relative inline-block ml-1 sm:ml-2">
 				<span class="text-white">Seninle…</span>
 				<!-- Animated underline - 4.5s animation -->
 				<svg
@@ -178,22 +178,22 @@
 </section>
 
 <!-- Trust Strip - Premium cards -->
-<section id="trust" class="py-24 md:py-32 relative overflow-hidden">
+<section id="trust" class="py-16 md:py-24 lg:py-32 relative overflow-hidden">
 	<!-- Background decorative elements -->
 	<div class="absolute inset-0 bg-gradient-to-b from-transparent via-primary/[0.02] to-transparent"></div>
 
-	<!-- Floating shapes -->
-	<div class="absolute top-20 left-[10%] w-72 h-72 bg-primary/5 rounded-full blur-3xl"></div>
-	<div class="absolute bottom-20 right-[10%] w-96 h-96 bg-teal/5 rounded-full blur-3xl"></div>
+	<!-- Floating shapes - hidden on mobile -->
+	<div class="hidden md:block absolute top-20 left-[10%] w-48 lg:w-72 h-48 lg:h-72 bg-primary/5 rounded-full blur-3xl"></div>
+	<div class="hidden md:block absolute bottom-20 right-[10%] w-64 lg:w-96 h-64 lg:h-96 bg-teal/5 rounded-full blur-3xl"></div>
 
 	<div class="container mx-auto px-4 relative z-10">
 		<!-- Header with accent -->
-		<div class="text-center mb-16" use:animate={{ type: 'fade-up' }}>
+		<div class="text-center mb-10 md:mb-16" use:animate={{ type: 'fade-up' }}>
 			<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/5 border border-primary/10 mb-6">
 				<div class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></div>
 				<span class="text-sm font-medium text-primary">Neden Biz?</span>
 			</div>
-			<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+			<h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
 				Güvenilir <span class="text-primary">Danışmanlık</span>
 			</h2>
 			<p class="text-muted-foreground mt-4 max-w-xl mx-auto">
@@ -242,7 +242,7 @@
 </section>
 
 <!-- Pricing Section - With Background -->
-<section class="py-24 md:py-32 relative overflow-hidden">
+<section class="py-16 md:py-24 lg:py-32 relative overflow-hidden">
 	<!-- Background Image -->
 	<div class="absolute inset-0">
 		<img
@@ -254,20 +254,20 @@
 		<div class="absolute inset-0 bg-gradient-to-r from-white via-white/98 to-white/90"></div>
 	</div>
 
-	<!-- Decorative elements -->
-	<div class="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
-	<div class="absolute bottom-0 left-1/4 w-64 h-64 bg-teal/5 rounded-full blur-3xl"></div>
+	<!-- Decorative elements - hidden on mobile -->
+	<div class="hidden md:block absolute top-0 right-0 w-64 lg:w-96 h-64 lg:h-96 bg-primary/5 rounded-full blur-3xl"></div>
+	<div class="hidden md:block absolute bottom-0 left-1/4 w-48 lg:w-64 h-48 lg:h-64 bg-teal/5 rounded-full blur-3xl"></div>
 
 	<div class="container mx-auto px-4 relative">
 		<div class="max-w-5xl mx-auto">
-			<div class="grid lg:grid-cols-2 gap-16 items-center">
+			<div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 				<!-- Left content -->
 				<div use:animate={{ type: 'fade-right' }}>
 					<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 mb-6">
 						<div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
 						<span class="text-sm font-medium text-primary">Danışmanlık Paketi</span>
 					</div>
-					<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
+					<h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
 						Daire Başına
 						<span class="block text-primary">2.999 TL</span>
 					</h2>
@@ -322,11 +322,11 @@
 </section>
 
 <!-- CTA Section - Premium Design -->
-<section class="py-20 md:py-28">
+<section class="py-16 md:py-24 lg:py-28">
 	<div class="container mx-auto px-4">
 		<div class="relative max-w-5xl mx-auto" use:animate={{ type: 'scale-up' }}>
 			<!-- Main CTA Card -->
-			<div class="relative overflow-hidden rounded-3xl">
+			<div class="relative overflow-hidden rounded-2xl md:rounded-3xl">
 				<!-- Background Image -->
 				<div class="absolute inset-0">
 					<img
@@ -338,20 +338,20 @@
 					<div class="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-purple/85"></div>
 				</div>
 
-				<!-- Decorative Elements -->
-				<div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-				<div class="absolute bottom-0 left-0 w-64 h-64 bg-teal/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+				<!-- Decorative Elements - hidden on mobile -->
+				<div class="hidden md:block absolute top-0 right-0 w-64 lg:w-96 h-64 lg:h-96 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+				<div class="hidden md:block absolute bottom-0 left-0 w-48 lg:w-64 h-48 lg:h-64 bg-teal/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
 
 				<!-- Content -->
-				<div class="relative px-8 py-16 md:px-16 md:py-20">
-					<div class="grid lg:grid-cols-2 gap-12 items-center">
+				<div class="relative px-5 py-10 sm:px-8 sm:py-14 md:px-12 md:py-16 lg:px-16 lg:py-20">
+					<div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 						<!-- Left Side - Text -->
 						<div>
-							<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6">
+							<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4 md:mb-6">
 								<div class="w-2 h-2 rounded-full bg-teal animate-pulse"></div>
 								<span class="text-white/90 text-sm font-medium">Ücretsiz Ön Görüşme</span>
 							</div>
-							<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+							<h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
 								Dönüşüme bugün
 								<span class="text-teal">başlayın</span>
 							</h2>

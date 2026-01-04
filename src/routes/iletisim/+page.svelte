@@ -33,14 +33,31 @@
 
 		isSubmitting = true;
 
-		// Simulate API call
-		await new Promise((resolve) => setTimeout(resolve, 1000));
+		try {
+			const response = await fetch('/api/contact', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({
+					name: formData.name,
+					phone: formData.phone,
+					email: formData.email,
+					message: formData.message
+				})
+			});
 
-		toast.success('Mesajınız başarıyla gönderildi! En kısa sürede sizinle iletişime geçeceğiz.');
+			const result = await response.json();
 
-		// Reset form
-		formData = { name: '', phone: '', email: '', message: '', kvkk: false };
-		isSubmitting = false;
+			if (!response.ok) {
+				throw new Error(result.error || 'Bir hata oluştu');
+			}
+
+			toast.success('Mesajınız başarıyla gönderildi! En kısa sürede sizinle iletişime geçeceğiz.');
+			formData = { name: '', phone: '', email: '', message: '', kvkk: false };
+		} catch (error) {
+			toast.error(error instanceof Error ? error.message : 'Mesaj gönderilemedi. Lütfen tekrar deneyin.');
+		} finally {
+			isSubmitting = false;
+		}
 	}
 
 	const contactMethods = [
@@ -79,14 +96,14 @@
 	<!-- Background gradient -->
 	<div class="absolute inset-0 bg-gradient-to-br from-muted/30 via-background to-primary/5"></div>
 
-	<!-- Decorative elements -->
-	<div class="absolute top-20 right-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
-	<div class="absolute bottom-20 left-20 w-96 h-96 bg-purple/10 rounded-full blur-3xl"></div>
+	<!-- Decorative elements - hidden on mobile -->
+	<div class="hidden md:block absolute top-20 right-10 lg:right-20 w-48 lg:w-72 h-48 lg:h-72 bg-primary/10 rounded-full blur-3xl"></div>
+	<div class="hidden md:block absolute bottom-20 left-10 lg:left-20 w-64 lg:w-96 h-64 lg:h-96 bg-purple/10 rounded-full blur-3xl"></div>
 
 	<div class="container mx-auto px-4 relative z-10">
-		<div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+		<div class="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-20 items-center">
 			<!-- Left - Typography & Info -->
-			<div class="space-y-8 lg:pl-16 xl:pl-24">
+			<div class="space-y-6 md:space-y-8 lg:pl-16 xl:pl-24">
 				<div use:animate={{ type: 'fade-up', delay: 0 }}>
 					<span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
 						<Mail class="h-4 w-4" />
@@ -96,7 +113,7 @@
 
 				<h1
 					use:animate={{ type: 'fade-up', delay: 100 }}
-					class="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-[1.1] tracking-tight"
+					class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-[1.1] tracking-tight"
 				>
 					Hayalinizdeki<br />
 					<span class="text-primary">eve</span> bir adım
@@ -122,9 +139,9 @@
 							<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
 								<method.icon class="h-5 w-5 text-primary group-hover:text-white transition-colors" />
 							</div>
-							<div class="text-left">
+							<div class="text-left min-w-0">
 								<p class="text-xs text-muted-foreground">{method.label}</p>
-								<p class="text-sm font-medium text-foreground">{method.value}</p>
+								<p class="text-sm font-medium text-foreground truncate">{method.value}</p>
 							</div>
 						</a>
 					{/each}
@@ -146,7 +163,7 @@
 				class="relative"
 			>
 				<!-- Form Card -->
-				<div class="bg-background rounded-3xl p-8 md:p-10 shadow-2xl shadow-black/5 border border-border/50">
+				<div class="bg-background rounded-3xl p-6 sm:p-8 md:p-10 shadow-2xl shadow-black/5 border border-border/50">
 					<div class="mb-8">
 						<h2 class="text-2xl font-bold text-foreground mb-2">Bize Ulaşın</h2>
 						<p class="text-muted-foreground">Formu doldurun, sizi arayalım</p>

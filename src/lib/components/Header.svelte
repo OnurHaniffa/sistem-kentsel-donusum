@@ -188,7 +188,7 @@
 			</nav>
 
 			<!-- CTA -->
-			<div class="absolute bottom-0 left-0 right-0 p-6 border-t border-border/50 bg-muted/30">
+			<div class="absolute bottom-0 left-0 right-0 p-6 pb-[max(1.5rem,env(safe-area-inset-bottom))] border-t border-border/50 bg-muted/30">
 				<a
 					href="/iletisim"
 					onclick={closeMobileMenu}

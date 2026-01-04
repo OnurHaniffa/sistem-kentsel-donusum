@@ -153,7 +153,7 @@
 			<span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-white/90 text-sm font-medium mb-6 backdrop-blur-sm border border-white/20">
 				Hizmetler & Destekler
 			</span>
-			<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+			<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
 				Kentsel Dönüşümde <span class="text-teal">A'dan Z'ye</span> Yanınızdayız
 			</h1>
 			<p class="text-lg md:text-xl text-white/80 leading-relaxed">
@@ -166,11 +166,11 @@
 <!-- Process Steps - Timeline -->
 <section class="py-20 md:py-28">
 	<div class="container mx-auto px-4">
-		<div class="text-center mb-16" use:animate={{ type: 'fade-up' }}>
+		<div class="text-center mb-10 md:mb-16" use:animate={{ type: 'fade-up' }}>
 			<span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
 				Süreç
 			</span>
-			<h2 class="text-3xl md:text-4xl font-bold text-foreground">
+			<h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
 				Nasıl Çalışıyoruz?
 			</h2>
 		</div>
@@ -267,7 +267,7 @@
 			<div class="overflow-hidden rounded-3xl border-2 border-primary/20 shadow-xl">
 				<div class="bg-gradient-to-r from-primary via-purple to-primary text-white text-center py-10 px-8">
 					<p class="text-lg mb-2 opacity-90">Daire Başına</p>
-					<div class="text-6xl md:text-7xl font-bold mb-2">2.999 TL</div>
+					<div class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-2">2.999 TL</div>
 					<p class="text-sm opacity-75">KDV Dahil</p>
 				</div>
 				<div class="p-8 md:p-10 bg-white">

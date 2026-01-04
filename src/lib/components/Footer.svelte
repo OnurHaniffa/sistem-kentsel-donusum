@@ -30,15 +30,15 @@
 </script>
 
 <footer class="relative bg-[#1a1a2e] overflow-hidden">
-	<!-- Decorative elements -->
-	<div class="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl -translate-y-1/2"></div>
-	<div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-purple/10 rounded-full blur-3xl translate-y-1/2"></div>
+	<!-- Decorative elements - hidden on mobile to prevent overflow -->
+	<div class="hidden md:block absolute top-0 right-0 w-[400px] lg:w-[600px] h-[400px] lg:h-[600px] bg-primary/10 rounded-full blur-3xl -translate-y-1/2"></div>
+	<div class="hidden md:block absolute bottom-0 left-0 w-[300px] lg:w-[400px] h-[300px] lg:h-[400px] bg-purple/10 rounded-full blur-3xl translate-y-1/2"></div>
 
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
 		<!-- Main Content -->
 		<div class="py-20 md:py-24">
 			<!-- Top Section - Brand & CTA -->
-			<div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-12 mb-16 pb-16 border-b border-white/10">
+			<div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 lg:gap-12 mb-12 lg:mb-16 pb-12 lg:pb-16 border-b border-white/10">
 				<!-- Brand -->
 				<div class="max-w-lg">
 					<a href="/" class="inline-block transition-all duration-300 hover:opacity-80">
@@ -60,7 +60,7 @@
 						</div>
 						<div>
 							<p class="text-sm text-gray-500">E-posta</p>
-							<p class="text-base font-medium text-white">info@sistemkentseldonusum.com</p>
+							<p class="text-sm sm:text-base font-medium text-white break-all sm:break-normal">info@sistemkentseldonusum.com</p>
 						</div>
 					</a>
 					<a
@@ -81,7 +81,7 @@
 			</div>
 
 			<!-- Navigation Grid -->
-			<div class="grid grid-cols-2 md:grid-cols-4 gap-10 lg:gap-20">
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 lg:gap-16">
 				<!-- Sayfalar -->
 				<div>
 					<h3 class="text-base font-semibold text-white mb-6">Sayfalar</h3>

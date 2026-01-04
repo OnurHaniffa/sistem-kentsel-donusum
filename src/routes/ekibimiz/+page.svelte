@@ -111,7 +111,7 @@
 			<span use:animate={{ type: 'fade-up' }} class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-white/90 text-sm font-medium mb-6 backdrop-blur-sm border border-white/20">
 				Ekibimiz
 			</span>
-			<h1 use:animate={{ type: 'fade-up', delay: 100 }} class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+			<h1 use:animate={{ type: 'fade-up', delay: 100 }} class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
 				<span class="text-teal">Uzman</span> Kadromuz
 			</h1>
 			<p use:animate={{ type: 'fade-up', delay: 200 }} class="text-lg md:text-xl text-white/80 leading-relaxed">
@@ -129,7 +129,7 @@
 				<div use:animate={{ type: 'fade-up', delay: stagger(i, 100) }}>
 				<Card.Root class="group overflow-hidden rounded-2xl border border-border/50 hover:border-primary/30 hover:shadow-xl transition-all duration-300 h-full">
 					<!-- Avatar -->
-					<div class="relative h-44 {member.color} flex items-center justify-center">
+					<div class="relative h-36 sm:h-44 {member.color} flex items-center justify-center">
 						<div class="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
 							<member.icon class="h-10 w-10 text-white" />
 						</div>
@@ -155,7 +155,7 @@
 		<div class="max-w-6xl mx-auto">
 			<div class="text-center mb-12" use:animate={{ type: 'fade-up' }}>
 				<p class="text-primary text-sm font-medium mb-3">SSS</p>
-				<h2 class="text-3xl md:text-4xl font-bold text-foreground">
+				<h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
 					Sıkça Sorulan Sorular
 				</h2>
 			</div>

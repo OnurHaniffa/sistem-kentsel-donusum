@@ -56,7 +56,7 @@
 			<span use:animate={{ type: 'fade-up' }} class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-white/90 text-sm font-medium mb-6 backdrop-blur-sm border border-white/20">
 				Hakkımızda
 			</span>
-			<h1 use:animate={{ type: 'fade-up', delay: 100 }} class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+			<h1 use:animate={{ type: 'fade-up', delay: 100 }} class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
 				Kentsel Dönüşümde <span class="text-teal">Güvenilir</span> Ortağınız
 			</h1>
 			<p use:animate={{ type: 'fade-up', delay: 200 }} class="text-lg md:text-xl text-white/80 leading-relaxed">
@@ -71,7 +71,7 @@
 	<div class="container mx-auto px-4">
 		<div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
 			<div use:animate={{ type: 'fade-right' }} class="h-full">
-			<Card.Root class="group h-full p-8 rounded-2xl border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent hover:border-primary/40 hover:shadow-premium transition-all duration-500">
+			<Card.Root class="group h-full p-6 md:p-8 rounded-2xl border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent hover:border-primary/40 hover:shadow-premium transition-all duration-500">
 				<div class="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-purple flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
 					<Eye class="h-7 w-7 text-white" />
 				</div>
@@ -85,7 +85,7 @@
 			</div>
 
 			<div use:animate={{ type: 'fade-left', delay: 100 }} class="h-full">
-			<Card.Root class="group h-full p-8 rounded-2xl border-2 border-purple/20 bg-gradient-to-br from-purple/5 to-transparent hover:border-purple/40 hover:shadow-premium transition-all duration-500">
+			<Card.Root class="group h-full p-6 md:p-8 rounded-2xl border-2 border-purple/20 bg-gradient-to-br from-purple/5 to-transparent hover:border-purple/40 hover:shadow-premium transition-all duration-500">
 				<div class="w-14 h-14 rounded-xl bg-gradient-to-br from-purple to-primary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
 					<Target class="h-7 w-7 text-white" />
 				</div>
@@ -115,11 +115,11 @@
 			</div>
 
 			<!-- Values Grid -->
-			<div class="grid md:grid-cols-2 gap-x-16 gap-y-12">
+			<div class="grid md:grid-cols-2 gap-x-8 md:gap-x-12 lg:gap-x-16 gap-y-8 md:gap-y-12">
 				{#each values as value, i}
 					<div class="group" use:animate={{ type: 'fade-up', delay: stagger(i, 100) }}>
 						<div class="flex items-start gap-5">
-							<span class="text-5xl font-bold text-primary/20 group-hover:text-primary/40 transition-colors duration-300">
+							<span class="text-4xl md:text-5xl font-bold text-primary/20 group-hover:text-primary/40 transition-colors duration-300">
 								{value.number}
 							</span>
 							<div class="pt-2">
