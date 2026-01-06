@@ -35,8 +35,9 @@ export const POST: RequestHandler = async ({ request }) => {
 		}
 
 		// Send email to the business
+		// Note: Domain must be verified in Resend for production use
 		const { data, error } = await resend.emails.send({
-			from: 'Sistem Kentsel Dönüşüm <onboarding@resend.dev>',
+			from: 'Sistem Kentsel Dönüşüm <noreply@sistemkentseldonusum.com>',
 			to: CONTACT_EMAIL,
 			subject: `Yeni İletişim Formu: ${name}`,
 			html: `
