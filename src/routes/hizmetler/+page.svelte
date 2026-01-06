@@ -42,7 +42,7 @@
 		{
 			step: 4,
 			title: 'Sözleşme & Takip',
-			desc: 'Sözleşmeyi hazırlar, inşaat sürecini takip ederiz',
+			desc: 'Talepleriniz doğrultusunda sözleşmeyi hazırlar, haklarınızı güvence altına alır, inşaat sürecinizi takip ederiz.',
 			icon: FileText
 		}
 	];
