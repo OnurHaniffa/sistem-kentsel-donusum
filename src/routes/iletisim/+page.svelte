@@ -84,11 +84,24 @@
 
 <svelte:head>
 	<title>İletişim | Sistem Kentsel Dönüşüm</title>
-	<meta
-		name="description"
-		content="Sistem Kentsel Dönüşüm ile iletişime geçin. Ücretsiz ön görüşme için hemen arayın."
-	/>
+	<meta name="description" content="Sistem Kentsel Dönüşüm ile iletişime geçin. Ücretsiz ön görüşme için hemen arayın. İstanbul ve Kocaeli'de hizmet veriyoruz." />
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 	<link rel="canonical" href="https://sistemkentseldonusum.com/iletisim" />
+
+	<!-- Open Graph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://sistemkentseldonusum.com/iletisim" />
+	<meta property="og:title" content="İletişim | Sistem Kentsel Dönüşüm" />
+	<meta property="og:description" content="Sistem Kentsel Dönüşüm ile iletişime geçin. Ücretsiz ön görüşme için hemen arayın." />
+	<meta property="og:image" content="https://sistemkentseldonusum.com/og-image.jpg" />
+	<meta property="og:site_name" content="Sistem Kentsel Dönüşüm" />
+	<meta property="og:locale" content="tr_TR" />
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="İletişim | Sistem Kentsel Dönüşüm" />
+	<meta name="twitter:description" content="Sistem Kentsel Dönüşüm ile iletişime geçin. Ücretsiz ön görüşme için hemen arayın." />
+	<meta name="twitter:image" content="https://sistemkentseldonusum.com/og-image.jpg" />
 </svelte:head>
 
 <!-- Hero Section - Full Width Split -->

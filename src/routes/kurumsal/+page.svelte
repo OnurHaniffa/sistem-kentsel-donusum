@@ -33,10 +33,24 @@
 
 <svelte:head>
 	<title>Kurumsal | Sistem Kentsel Dönüşüm</title>
-	<meta
-		name="description"
-		content="Sistem Kentsel Dönüşüm hakkında. Vizyonumuz, misyonumuz ve değerlerimiz."
-	/>
+	<meta name="description" content="Sistem Kentsel Dönüşüm hakkında. Vizyonumuz, misyonumuz ve değerlerimiz. Güvenilir kentsel dönüşüm danışmanlığı." />
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+	<link rel="canonical" href="https://sistemkentseldonusum.com/kurumsal" />
+
+	<!-- Open Graph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://sistemkentseldonusum.com/kurumsal" />
+	<meta property="og:title" content="Kurumsal | Sistem Kentsel Dönüşüm" />
+	<meta property="og:description" content="Sistem Kentsel Dönüşüm hakkında. Vizyonumuz, misyonumuz ve değerlerimiz." />
+	<meta property="og:image" content="https://sistemkentseldonusum.com/og-image.jpg" />
+	<meta property="og:site_name" content="Sistem Kentsel Dönüşüm" />
+	<meta property="og:locale" content="tr_TR" />
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Kurumsal | Sistem Kentsel Dönüşüm" />
+	<meta name="twitter:description" content="Sistem Kentsel Dönüşüm hakkında. Vizyonumuz, misyonumuz ve değerlerimiz." />
+	<meta name="twitter:image" content="https://sistemkentseldonusum.com/og-image.jpg" />
 </svelte:head>
 
 <!-- Hero with background image -->

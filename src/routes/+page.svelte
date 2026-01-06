@@ -69,20 +69,27 @@
 
 <svelte:head>
 	<title>Sistem Kentsel Dönüşüm | Güvenilir Kentsel Dönüşüm Danışmanlığı</title>
-	<meta
-		name="description"
-		content="Kentsel dönüşüm sürecinde güvenilir danışmanlık hizmeti. Hukuki destek, mimari danışmanlık ve gayrimenkul değerleme ile yanınızdayız."
-	/>
-	<meta
-		name="keywords"
-		content="kentsel dönüşüm, dönüşüm danışmanlığı, riskli yapı, İstanbul, deprem, yenileme"
-	/>
+	<meta name="description" content="Kentsel dönüşüm sürecinde güvenilir danışmanlık hizmeti. Hukuki destek, mimari danışmanlık ve gayrimenkul değerleme ile yanınızdayız." />
+	<meta name="keywords" content="kentsel dönüşüm, dönüşüm danışmanlığı, riskli yapı, İstanbul, Kocaeli, deprem, yenileme, 6306 sayılı kanun" />
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 	<link rel="canonical" href="https://sistemkentseldonusum.com" />
-	<meta property="og:title" content="Sistem Kentsel Dönüşüm | Güvenilir Kentsel Dönüşüm Danışmanlığı" />
-	<meta property="og:description" content="Kentsel dönüşüm sürecinde güvenilir danışmanlık hizmeti." />
+
+	<!-- Open Graph -->
 	<meta property="og:type" content="website" />
-	<meta property="og:locale" content="tr_TR" />
 	<meta property="og:url" content="https://sistemkentseldonusum.com" />
+	<meta property="og:title" content="Sistem Kentsel Dönüşüm | Güvenilir Kentsel Dönüşüm Danışmanlığı" />
+	<meta property="og:description" content="Kentsel dönüşüm sürecinde güvenilir danışmanlık hizmeti. Hukuki destek, mimari danışmanlık ve gayrimenkul değerleme ile yanınızdayız." />
+	<meta property="og:image" content="https://sistemkentseldonusum.com/og-image.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:site_name" content="Sistem Kentsel Dönüşüm" />
+	<meta property="og:locale" content="tr_TR" />
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Sistem Kentsel Dönüşüm | Güvenilir Kentsel Dönüşüm Danışmanlığı" />
+	<meta name="twitter:description" content="Kentsel dönüşüm sürecinde güvenilir danışmanlık hizmeti. Hukuki destek, mimari danışmanlık ve gayrimenkul değerleme." />
+	<meta name="twitter:image" content="https://sistemkentseldonusum.com/og-image.jpg" />
 </svelte:head>
 
 <!-- Hero Section - Clean and Minimal -->

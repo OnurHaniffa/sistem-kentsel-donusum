@@ -138,10 +138,25 @@
 
 <svelte:head>
 	<title>Hizmetler & Destekler | Sistem Kentsel Dönüşüm</title>
-	<meta
-		name="description"
-		content="Kentsel dönüşüm danışmanlık hizmetlerimiz ve devlet destekleri. Hukuki destek, mimari danışmanlık, değerleme, hibeler ve krediler."
-	/>
+	<meta name="description" content="Kentsel dönüşüm danışmanlık hizmetlerimiz ve devlet destekleri. Hukuki destek, mimari danışmanlık, değerleme, hibeler ve krediler." />
+	<meta name="keywords" content="kentsel dönüşüm hizmetleri, hukuki destek, mimari danışmanlık, gayrimenkul değerleme, devlet destekleri, hibe, kredi" />
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+	<link rel="canonical" href="https://sistemkentseldonusum.com/hizmetler" />
+
+	<!-- Open Graph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://sistemkentseldonusum.com/hizmetler" />
+	<meta property="og:title" content="Hizmetler & Destekler | Sistem Kentsel Dönüşüm" />
+	<meta property="og:description" content="Kentsel dönüşüm danışmanlık hizmetlerimiz ve devlet destekleri. Hukuki destek, mimari danışmanlık, değerleme, hibeler ve krediler." />
+	<meta property="og:image" content="https://sistemkentseldonusum.com/og-image.jpg" />
+	<meta property="og:site_name" content="Sistem Kentsel Dönüşüm" />
+	<meta property="og:locale" content="tr_TR" />
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Hizmetler & Destekler | Sistem Kentsel Dönüşüm" />
+	<meta name="twitter:description" content="Kentsel dönüşüm danışmanlık hizmetlerimiz ve devlet destekleri." />
+	<meta name="twitter:image" content="https://sistemkentseldonusum.com/og-image.jpg" />
 </svelte:head>
 
 <!-- Hero -->
