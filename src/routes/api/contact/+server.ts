@@ -5,13 +5,33 @@ import type { RequestHandler } from './$types';
 
 const resend = new Resend(RESEND_API_KEY);
 
+// Validation functions
+function isValidPhone(phone: string): boolean {
+	const cleaned = phone.replace(/\s/g, '').replace(/-/g, '');
+	return /^(\+90|0)?5\d{9}$/.test(cleaned);
+}
+
+function isValidEmail(email: string): boolean {
+	return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
 export const POST: RequestHandler = async ({ request }) => {
 	try {
 		const { name, phone, email, message } = await request.json();
 
 		// Validate required fields
-		if (!name || !phone) {
-			return json({ error: 'Ad ve telefon alanları zorunludur.' }, { status: 400 });
+		if (!name || !phone || !email) {
+			return json({ error: 'Ad, telefon ve e-posta alanları zorunludur.' }, { status: 400 });
+		}
+
+		// Validate phone format
+		if (!isValidPhone(phone)) {
+			return json({ error: 'Geçerli bir telefon numarası girin.' }, { status: 400 });
+		}
+
+		// Validate email format
+		if (!isValidEmail(email)) {
+			return json({ error: 'Geçerli bir e-posta adresi girin.' }, { status: 400 });
 		}
 
 		// Send email to the business

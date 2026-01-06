@@ -23,8 +23,31 @@
 
 	let isSubmitting = $state(false);
 
+	// Validation functions
+	function isValidPhone(phone: string): boolean {
+		// Turkish phone: 05XX XXX XX XX or +90 5XX XXX XX XX
+		const cleaned = phone.replace(/\s/g, '').replace(/-/g, '');
+		return /^(\+90|0)?5\d{9}$/.test(cleaned);
+	}
+
+	function isValidEmail(email: string): boolean {
+		return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+	}
+
 	async function handleSubmit(e: Event) {
 		e.preventDefault();
+
+		// Validate phone
+		if (!isValidPhone(formData.phone)) {
+			toast.error('Lütfen geçerli bir telefon numarası girin (05XX XXX XX XX)');
+			return;
+		}
+
+		// Validate email
+		if (!formData.email || !isValidEmail(formData.email)) {
+			toast.error('Lütfen geçerli bir e-posta adresi girin');
+			return;
+		}
 
 		if (!formData.kvkk) {
 			toast.error('Lütfen KVKK metnini onaylayın');
@@ -208,12 +231,13 @@
 						</div>
 
 						<div class="space-y-2">
-							<label for="email" class="text-sm font-medium text-foreground">E-posta</label>
+							<label for="email" class="text-sm font-medium text-foreground">E-posta <span class="text-primary">*</span></label>
 							<Input
 								id="email"
 								type="email"
 								placeholder="ornek@email.com"
 								bind:value={formData.email}
+								required
 								class="h-12 rounded-xl bg-muted/50 border-0 focus:ring-2 focus:ring-primary/20 transition-all duration-300"
 							/>
 						</div>
