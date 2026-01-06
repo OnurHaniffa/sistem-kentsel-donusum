@@ -36,7 +36,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
 		// Send email to the business
 		const { data, error } = await resend.emails.send({
-			from: 'Sistem Kentsel Dönüşüm <noreply@send.sistemkentseldonusum.com>',
+			from: 'Sistem Kentsel Dönüşüm <onboarding@resend.dev>',
 			to: CONTACT_EMAIL,
 			subject: `Yeni İletişim Formu: ${name}`,
 			html: `
