@@ -157,7 +157,7 @@
 				Kentsel Dönüşümde <span class="text-teal">A'dan Z'ye</span> Yanınızdayız
 			</h1>
 			<p class="text-lg md:text-xl text-white/80 leading-relaxed">
-				Profesyonel danışmanlık hizmetleri ve devlet destekleri hakkında bilgi alın.
+				Profesyonel danışmanlık hizmeti, hibe, kredi ve kira yardımı hakkında bilgi alın.
 			</p>
 		</div>
 	</div>
