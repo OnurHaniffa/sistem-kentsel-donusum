@@ -236,7 +236,7 @@
 				<div
 					use:animate={{ type: 'fade-up', delay: stagger(i, 100) }}
 					id={service.id}
-					class="group relative p-6 lg:p-8 rounded-3xl bg-white border border-border/50 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all duration-500 scroll-mt-32"
+					class="group relative p-6 lg:p-8 rounded-3xl bg-white border border-border/50 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all duration-500 scroll-mt-32 {i === services.length - 1 && services.length % 2 === 1 ? 'md:col-span-2 md:max-w-[calc(50%-0.625rem)] md:mx-auto' : ''}"
 				>
 					<div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl {service.color} opacity-5 rounded-full blur-2xl group-hover:opacity-10 transition-opacity duration-500"></div>
 					<div class="relative flex items-start gap-5">
