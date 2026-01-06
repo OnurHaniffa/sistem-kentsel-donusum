@@ -51,7 +51,7 @@
 		{
 			id: 'hukuki',
 			title: 'Hukuki Destek',
-			desc: 'Arsa payı karşılığı inşaat sözleşmesi ve teminatlar konusunda hukuki destek. Avukat eşliğinde haklarınızı koruyoruz.',
+			desc: 'Arsa payı karşılığı inşaat sözleşmesi ve teminatlar konusunda hukuki destek.',
 			icon: Scale,
 			color: 'from-primary to-purple'
 		},
