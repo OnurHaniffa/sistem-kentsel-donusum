@@ -18,7 +18,7 @@
 		{
 			icon: Shield,
 			title: 'Hukuki Güvence',
-			desc: 'Avukat destekli sözleşme süreçleri',
+			desc: 'Avukat destekli sözleşme süreci',
 			gradient: 'from-primary to-primary/70',
 			href: '/hizmetler#hukuki'
 		},
@@ -401,7 +401,7 @@
 										class="flex items-center justify-center gap-3 w-full py-4 rounded-xl bg-white text-foreground font-semibold text-base hover:bg-white/90 transition-all duration-300 hover:scale-[1.02] shadow-lg group"
 									>
 										<Phone class="h-5 w-5" />
-										Ücretsiz Görüşme
+										Ücretsiz Ön Görüşme
 										<ArrowRight class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
 									</a>
 									<a

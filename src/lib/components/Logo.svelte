@@ -8,9 +8,9 @@
 	let { size = 'md', light = false, showTagline = false }: Props = $props();
 
 	const sizes = {
-		sm: { top: 'text-[12px]', bottom: 'text-[16px]', tagline: 'text-[7px]' },
-		md: { top: 'text-[15px]', bottom: 'text-[20px]', tagline: 'text-[9px]' },
-		lg: { top: 'text-[20px]', bottom: 'text-[26px]', tagline: 'text-[11px]' }
+		sm: { top: 'text-[10px]', bottom: 'text-[13px]', tagline: 'text-[7px]' },
+		md: { top: 'text-[12px]', bottom: 'text-[16px]', tagline: 'text-[9px]' },
+		lg: { top: 'text-[16px]', bottom: 'text-[21px]', tagline: 'text-[11px]' }
 	};
 
 	let s = $derived(sizes[size]);
@@ -19,17 +19,17 @@
 </script>
 
 <div class="flex flex-col items-center text-center">
-	<!-- SistemKentsel -->
+	<!-- SISTEM -->
 	<span
-		class="{s.top} font-semibold tracking-wide leading-none"
+		class="{s.top} font-black tracking-[0.25em] leading-none"
 		style="font-family: 'Quicksand', sans-serif; color: {mainColor};"
-	>SistemKentsel</span>
+	>SISTEM</span>
 
-	<!-- DÖNÜŞÜM using font -->
+	<!-- Kentsel Dönüşüm -->
 	<span
-		class="{s.bottom} font-black tracking-[0.15em] leading-none mt-0.5"
+		class="{s.bottom} font-semibold tracking-wide leading-none mt-0.5"
 		style="font-family: 'Quicksand', sans-serif; color: {mainColor};"
-	>DÖNÜŞÜM</span>
+	>Kentsel Dönüşüm</span>
 
 	{#if showTagline}
 		<span

@@ -24,19 +24,19 @@
 		{
 			step: 1,
 			title: 'Ücretsiz Ön Görüşme',
-			desc: 'Durumunuzu değerlendirir, süreç hakkında bilgilendiririz',
+			desc: 'Pozisyonunuzu değerlendirir, süreç hakkında bilgilendirme yaparız.',
 			icon: Phone
 		},
 		{
 			step: 2,
 			title: 'Riskli Yapı Tespiti',
-			desc: 'Binanızın durumunu inceler, gerekli tespitleri yaptırırız',
+			desc: 'Binanızın durumunu inceler, riskli yapı tespiti ve ihtimaller hakkında bilgilendirme yaparız.',
 			icon: ClipboardCheck
 		},
 		{
 			step: 3,
 			title: 'Firma Seçimi',
-			desc: 'Güvenilir yüklenici firmalarını araştırır, size sunarız',
+			desc: 'Mimari proje desteği verip, projenize en uygun yüklenici firmaları sizlere sunarız.',
 			icon: Users
 		},
 		{

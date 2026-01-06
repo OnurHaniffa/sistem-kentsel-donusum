@@ -104,7 +104,7 @@
 									? 'bg-white text-foreground hover:bg-white/90 shadow-lg shadow-white/10 hover:shadow-xl hover:shadow-white/20 hover:scale-105'
 									: 'bg-foreground text-background hover:bg-foreground/90 shadow-lg shadow-foreground/10 hover:shadow-xl hover:shadow-foreground/20 hover:scale-105'}"
 						>
-							Ücretsiz Görüşme
+							Ücretsiz Ön Görüşme
 							<ArrowRight class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
 						</a>
 					</div>
@@ -194,7 +194,7 @@
 					onclick={closeMobileMenu}
 					class="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl bg-foreground text-background font-semibold text-sm hover:bg-foreground/90 transition-all duration-300 hover:scale-[1.02]"
 				>
-					Ücretsiz Görüşme
+					Ücretsiz Ön Görüşme
 					<ArrowRight class="h-4 w-4" />
 				</a>
 				<p class="text-center text-xs text-muted-foreground mt-4">
