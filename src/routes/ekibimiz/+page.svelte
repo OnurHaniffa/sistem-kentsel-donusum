@@ -40,6 +40,13 @@
 			icon: Calculator,
 			desc: 'Taşınmaz değerleme ve pay dağılımı hesaplamaları',
 			color: 'bg-primary'
+		},
+		{
+			name: 'Furkan AKTAN',
+			role: 'Gayrimenkul Değerleme Uzmanı',
+			icon: Calculator,
+			desc: 'Taşınmaz değerleme ve pay dağılımı hesaplamaları',
+			color: 'bg-teal'
 		}
 	];
 
@@ -124,9 +131,34 @@
 <!-- Team Grid -->
 <section class="py-20 md:py-28">
 	<div class="container mx-auto px-4">
-		<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-			{#each team as member, i}
+		<!-- First row: 3 cards -->
+		<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto mb-6">
+			{#each team.slice(0, 3) as member, i}
 				<div use:animate={{ type: 'fade-up', delay: stagger(i, 100) }}>
+				<Card.Root class="group overflow-hidden rounded-2xl border border-border/50 hover:border-primary/30 hover:shadow-xl transition-all duration-300 h-full">
+					<!-- Avatar -->
+					<div class="relative h-36 sm:h-44 {member.color} flex items-center justify-center">
+						<div class="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+							<member.icon class="h-10 w-10 text-white" />
+						</div>
+					</div>
+
+					<Card.Content class="p-6 text-center">
+						<h3 class="font-bold text-lg text-foreground mb-1 group-hover:text-primary transition-colors duration-300">
+							{member.name}
+						</h3>
+						<p class="text-primary font-medium text-sm mb-3">{member.role}</p>
+						<p class="text-muted-foreground text-sm leading-relaxed">{member.desc}</p>
+					</Card.Content>
+				</Card.Root>
+				</div>
+			{/each}
+		</div>
+
+		<!-- Second row: 2 cards centered -->
+		<div class="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+			{#each team.slice(3) as member, i}
+				<div use:animate={{ type: 'fade-up', delay: stagger(i + 3, 100) }}>
 				<Card.Root class="group overflow-hidden rounded-2xl border border-border/50 hover:border-primary/30 hover:shadow-xl transition-all duration-300 h-full">
 					<!-- Avatar -->
 					<div class="relative h-36 sm:h-44 {member.color} flex items-center justify-center">
