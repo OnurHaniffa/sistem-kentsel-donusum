@@ -267,13 +267,11 @@
 						<div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
 						<span class="text-sm font-medium text-primary">Danışmanlık Paketi</span>
 					</div>
-					<h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
-						Daire Başına
-						<span class="block text-primary">2.999 TL</span>
+					<h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6 leading-tight">
+						Ön Görüşme Ücretsizdir
 					</h2>
 					<p class="text-muted-foreground text-lg mb-8 leading-relaxed">
-						Kentsel dönüşüm sürecinizde ihtiyacınız olan tüm hizmetler tek bir pakette.
-						<span class="text-primary font-medium">Ön görüşme ücretsizdir.</span>
+						Kentsel dönüşüm sürecinizde ihtiyacınız olan tüm hizmetler tek bir pakette daire başına sadece <span class="text-primary font-semibold">2.999 TL</span>
 					</p>
 					<div class="flex flex-col sm:flex-row gap-3">
 						<Button
