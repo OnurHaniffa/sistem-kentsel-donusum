@@ -75,6 +75,13 @@
 			desc: '6306 sayılı yasa kapsamında tüm süreçlerin takibi ve ihtilaflara çözüm önerileri.',
 			icon: FileText,
 			color: 'from-primary to-teal'
+		},
+		{
+			id: 'destekler',
+			title: 'Kredi - Hibe Desteği, Kira Yardımı',
+			desc: 'Hak sahiplerinin kentsel dönüşüm sürecinde faydalanabileceği devlet desteklerinin takibi ve başvurusu.',
+			icon: PiggyBank,
+			color: 'from-teal to-purple'
 		}
 	];
 
