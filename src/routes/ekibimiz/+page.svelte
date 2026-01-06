@@ -143,12 +143,12 @@
 						</div>
 					</div>
 
-					<Card.Content class="p-6 text-center">
-						<h3 class="font-bold text-lg text-foreground mb-1 group-hover:text-primary transition-colors duration-300">
+					<Card.Content class="p-4 sm:p-6 text-center">
+						<h3 class="font-bold text-base sm:text-lg text-foreground mb-1 group-hover:text-primary transition-colors duration-300 break-words">
 							{member.name}
 						</h3>
-						<p class="text-primary font-medium text-sm mb-3">{member.role}</p>
-						<p class="text-muted-foreground text-sm leading-relaxed">{member.desc}</p>
+						<p class="text-primary font-medium text-xs sm:text-sm mb-3 break-words">{member.role}</p>
+						<p class="text-muted-foreground text-xs sm:text-sm leading-relaxed break-words">{member.desc}</p>
 					</Card.Content>
 				</Card.Root>
 				</div>
@@ -167,12 +167,12 @@
 						</div>
 					</div>
 
-					<Card.Content class="p-6 text-center">
-						<h3 class="font-bold text-lg text-foreground mb-1 group-hover:text-primary transition-colors duration-300">
+					<Card.Content class="p-4 sm:p-6 text-center">
+						<h3 class="font-bold text-base sm:text-lg text-foreground mb-1 group-hover:text-primary transition-colors duration-300 break-words">
 							{member.name}
 						</h3>
-						<p class="text-primary font-medium text-sm mb-3">{member.role}</p>
-						<p class="text-muted-foreground text-sm leading-relaxed">{member.desc}</p>
+						<p class="text-primary font-medium text-xs sm:text-sm mb-3 break-words">{member.role}</p>
+						<p class="text-muted-foreground text-xs sm:text-sm leading-relaxed break-words">{member.desc}</p>
 					</Card.Content>
 				</Card.Root>
 				</div>

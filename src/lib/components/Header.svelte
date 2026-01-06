@@ -122,7 +122,7 @@
 						<div class="relative w-5 h-5">
 							<span
 								class="absolute left-0 block h-0.5 w-5 rounded-full transition-all duration-300 {useLight ? 'bg-white' : 'bg-current'}
-									{mobileMenuOpen ? 'top-[9px] rotate-45' : 'top-1'}"
+									{mobileMenuOpen ? 'top-[9px] rotate-45' : 'top-[3px]'}"
 							></span>
 							<span
 								class="absolute left-0 top-[9px] block h-0.5 w-5 rounded-full transition-all duration-300 {useLight ? 'bg-white' : 'bg-current'}
@@ -130,7 +130,7 @@
 							></span>
 							<span
 								class="absolute left-0 block h-0.5 w-5 rounded-full transition-all duration-300 {useLight ? 'bg-white' : 'bg-current'}
-									{mobileMenuOpen ? 'top-[9px] -rotate-45' : 'top-[17px]'}"
+									{mobileMenuOpen ? 'top-[9px] -rotate-45' : 'top-[15px]'}"
 							></span>
 						</div>
 					</button>
@@ -152,7 +152,7 @@
 		></div>
 
 		<!-- Menu Panel -->
-		<div class="absolute right-0 top-0 h-full w-full max-w-sm bg-white shadow-2xl animate-slide-in-right">
+		<div class="absolute right-0 top-0 h-full w-full max-w-[85vw] sm:max-w-sm bg-white shadow-2xl animate-slide-in-right">
 			<!-- Header -->
 			<div class="flex items-center justify-between p-6 border-b border-border/50">
 				<a href="/" onclick={closeMobileMenu}>

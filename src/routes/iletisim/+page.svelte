@@ -134,14 +134,14 @@
 					{#each contactMethods as method, i}
 						<a
 							href={method.href}
-							class="group flex items-center gap-3 px-5 py-3 rounded-2xl bg-background border border-border/50 hover:border-primary/30 hover:shadow-lg transition-all duration-300"
+							class="group flex items-center gap-2 sm:gap-3 px-3 sm:px-5 py-2 sm:py-3 rounded-2xl bg-background border border-border/50 hover:border-primary/30 hover:shadow-lg transition-all duration-300"
 						>
-							<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-								<method.icon class="h-5 w-5 text-primary group-hover:text-white transition-colors" />
+							<div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+								<method.icon class="h-4 w-4 sm:h-5 sm:w-5 text-primary group-hover:text-white transition-colors" />
 							</div>
 							<div class="text-left min-w-0">
-								<p class="text-xs text-muted-foreground">{method.label}</p>
-								<p class="text-sm font-medium text-foreground truncate">{method.value}</p>
+								<p class="text-[10px] sm:text-xs text-muted-foreground">{method.label}</p>
+								<p class="text-xs sm:text-sm font-medium text-foreground truncate">{method.value}</p>
 							</div>
 						</a>
 					{/each}

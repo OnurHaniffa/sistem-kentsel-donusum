@@ -115,18 +115,18 @@
 			</div>
 
 			<!-- Values Grid -->
-			<div class="grid md:grid-cols-2 gap-x-8 md:gap-x-12 lg:gap-x-16 gap-y-8 md:gap-y-12">
+			<div class="grid md:grid-cols-2 gap-x-4 sm:gap-x-8 md:gap-x-12 lg:gap-x-16 gap-y-6 sm:gap-y-8 md:gap-y-12">
 				{#each values as value, i}
 					<div class="group" use:animate={{ type: 'fade-up', delay: stagger(i, 100) }}>
-						<div class="flex items-start gap-5">
-							<span class="text-4xl md:text-5xl font-bold text-primary/20 group-hover:text-primary/40 transition-colors duration-300">
+						<div class="flex items-start gap-3 sm:gap-5">
+							<span class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary/20 group-hover:text-primary/40 transition-colors duration-300 shrink-0">
 								{value.number}
 							</span>
-							<div class="pt-2">
-								<h3 class="text-xl font-semibold text-foreground mb-2">
+							<div class="pt-1 sm:pt-2 min-w-0">
+								<h3 class="text-lg sm:text-xl font-semibold text-foreground mb-2 break-words">
 									{value.title}
 								</h3>
-								<p class="text-muted-foreground leading-relaxed">
+								<p class="text-sm sm:text-base text-muted-foreground leading-relaxed break-words">
 									{value.desc}
 								</p>
 							</div>

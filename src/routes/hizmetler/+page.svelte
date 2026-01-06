@@ -209,7 +209,7 @@
 								<h3 class="font-semibold text-lg text-foreground mb-2">
 									{step.title}
 								</h3>
-								<p class="text-muted-foreground text-sm leading-relaxed">{step.desc}</p>
+								<p class="text-muted-foreground text-sm leading-relaxed break-words">{step.desc}</p>
 							</div>
 						</div>
 					{/each}
@@ -284,7 +284,7 @@
 								<div class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-primary/20 transition-colors duration-300">
 									<Check class="h-4 w-4 text-primary" />
 								</div>
-								<span class="text-muted-foreground text-sm leading-relaxed">{item}</span>
+								<span class="text-muted-foreground text-sm leading-relaxed break-words">{item}</span>
 							</div>
 						{/each}
 					</div>
@@ -335,13 +335,13 @@
 					</div>
 					<div class="p-6 space-y-4">
 						{#each support.items as item}
-							<div class="group flex items-center gap-4 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-colors duration-300">
-								<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary/10 to-teal/10 flex items-center justify-center group-hover:from-primary/20 group-hover:to-teal/20 transition-all duration-300">
+							<div class="group flex items-center gap-2 sm:gap-4 p-3 sm:p-4 rounded-xl bg-muted/50 hover:bg-muted transition-colors duration-300">
+								<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary/10 to-teal/10 flex items-center justify-center shrink-0 group-hover:from-primary/20 group-hover:to-teal/20 transition-all duration-300">
 									<item.icon class="h-5 w-5 text-primary" />
 								</div>
-								<div class="flex-1">
-									<span class="font-semibold text-foreground">{item.type}</span>
-									<div class="text-sm text-muted-foreground mt-0.5">
+								<div class="flex-1 min-w-0">
+									<span class="font-semibold text-foreground break-words">{item.type}</span>
+									<div class="text-xs sm:text-sm text-muted-foreground mt-0.5 break-words">
 										<span class="text-primary font-medium">{item.hibe}</span> hibe + <span class="text-primary font-medium">{item.kredi}</span> kredi
 										{#if item.extra}
 											<span class="text-teal"> + {item.extra}</span>

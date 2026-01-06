@@ -50,31 +50,31 @@
 				</div>
 
 				<!-- Quick Actions -->
-				<div class="flex flex-wrap gap-4">
+				<div class="flex flex-wrap gap-3 sm:gap-4">
 					<a
 						href="mailto:info@sistemkentseldonusum.com"
-						class="group flex items-center gap-4 px-6 py-4 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/40 hover:bg-white/10 transition-all duration-300"
+						class="group flex items-center gap-2 sm:gap-4 px-3 sm:px-6 py-3 sm:py-4 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/40 hover:bg-white/10 transition-all duration-300"
 					>
-						<div class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-							<Mail class="h-6 w-6 text-primary group-hover:text-white transition-colors" />
+						<div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-primary/20 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+							<Mail class="h-5 w-5 sm:h-6 sm:w-6 text-primary group-hover:text-white transition-colors" />
 						</div>
-						<div>
-							<p class="text-sm text-gray-500">E-posta</p>
-							<p class="text-sm sm:text-base font-medium text-white break-all sm:break-normal">info@sistemkentseldonusum.com</p>
+						<div class="min-w-0">
+							<p class="text-xs sm:text-sm text-gray-500">E-posta</p>
+							<p class="text-xs sm:text-base font-medium text-white break-all sm:break-normal">info@sistemkentseldonusum.com</p>
 						</div>
 					</a>
 					<a
 						href="https://wa.me/90XXXXXXXXXX"
 						target="_blank"
 						rel="noopener noreferrer"
-						class="group flex items-center gap-4 px-6 py-4 rounded-2xl bg-white/5 border border-white/10 hover:border-green-500/40 hover:bg-white/10 transition-all duration-300"
+						class="group flex items-center gap-2 sm:gap-4 px-3 sm:px-6 py-3 sm:py-4 rounded-2xl bg-white/5 border border-white/10 hover:border-green-500/40 hover:bg-white/10 transition-all duration-300"
 					>
-						<div class="w-12 h-12 rounded-xl bg-green-500/20 flex items-center justify-center group-hover:bg-green-500 group-hover:scale-110 transition-all duration-300">
-							<MessageCircle class="h-6 w-6 text-green-400 group-hover:text-white transition-colors" />
+						<div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-green-500/20 flex items-center justify-center shrink-0 group-hover:bg-green-500 group-hover:scale-110 transition-all duration-300">
+							<MessageCircle class="h-5 w-5 sm:h-6 sm:w-6 text-green-400 group-hover:text-white transition-colors" />
 						</div>
-						<div>
-							<p class="text-sm text-gray-500">WhatsApp</p>
-							<p class="text-base font-medium text-white">7/24 Destek</p>
+						<div class="min-w-0">
+							<p class="text-xs sm:text-sm text-gray-500">WhatsApp</p>
+							<p class="text-sm sm:text-base font-medium text-white">7/24 Destek</p>
 						</div>
 					</a>
 				</div>
