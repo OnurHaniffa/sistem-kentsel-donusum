@@ -188,7 +188,7 @@
 				<!-- Horizontal dotted line (desktop) -->
 				<div class="hidden lg:block absolute top-8 left-[10%] right-[10%] h-px border-t-2 border-dashed border-border"></div>
 
-				<div class="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-6">
+				<div class="grid grid-cols-1 lg:grid-cols-4 gap-12 lg:gap-10">
 					{#each processSteps as step, i}
 						<div class="relative" use:animate={{ type: 'fade-up', delay: stagger(i, 150) }}>
 							<!-- Vertical dotted line (mobile) -->
