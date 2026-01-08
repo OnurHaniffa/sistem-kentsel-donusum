@@ -446,26 +446,154 @@ sistem-kentsel-donusum/
 
 ---
 
-## Sonraki Adımlar (TODO)
+## Tamamlanan Görevler
 
-### Kısa Vadeli
-- [ ] Gerçek iletişim bilgilerinin eklenmesi
-- [ ] Google Maps embed entegrasyonu
-- [ ] Hero görselinin optimize edilmesi (WebP)
-- [ ] Favicon eklenmesi
-- [ ] Backend form entegrasyonu
+### SEO & Meta
+- [x] Sitemap.xml oluşturuldu (`/sitemap.xml`)
+- [x] Robots.txt oluşturuldu (`/robots.txt`)
+- [x] JSON-LD şemaları eklendi (Organization, LocalBusiness, FAQPage)
+- [x] Open Graph meta etiketleri tüm sayfalara eklendi
+- [x] Twitter Card meta etiketleri eklendi
+- [x] Canonical URL'ler eklendi
+- [x] OG image oluşturuldu (`static/og-image.jpg` - 1200x630)
 
-### Orta Vadeli
-- [ ] KVKK sayfası oluşturma
-- [ ] Gizlilik politikası sayfası
-- [ ] Kullanım koşulları sayfası
-- [ ] Blog bölümü (opsiyonel)
+### Sayfalar
+- [x] Ana sayfa (`/`)
+- [x] Hizmetler sayfası (`/hizmetler`)
+- [x] Kurumsal sayfası (`/kurumsal`)
+- [x] Ekibimiz sayfası (`/ekibimiz`)
+- [x] İletişim sayfası (`/iletisim`)
+- [x] KVKK Aydınlatma Metni (`/kvkk`)
+- [x] Gizlilik Politikası (`/gizlilik`)
+- [x] Kullanım Koşulları (`/kullanim-kosullari`)
 
-### Uzun Vadeli
+### İşlevsellik
+- [x] İletişim formu (Resend email API)
+- [x] Telefon ve email doğrulama (Türk telefon formatı)
+- [x] Google Maps embed (İletişim sayfası)
+- [x] Toast bildirimleri (svelte-sonner)
+- [x] Mobil responsive tasarım
+- [x] Animasyonlar (animate action)
+
+### Altyapı
+- [x] Vercel deployment
+- [x] Domain bağlantısı (sistemkentseldonusum.com)
+- [x] SSL sertifikası (otomatik)
+- [x] Resend email entegrasyonu
+- [x] Google Workspace MX kayıtları
+
+---
+
+## Kalan Görevler (TODO)
+
+### Acil - Müşteriden Bilgi Gerekli
+- [ ] **Telefon numarası** - Tüm placeholder'ları güncelle:
+  - `src/routes/iletisim/+page.svelte` (satır 90-91)
+  - `src/lib/components/Footer.svelte` (satır 67)
+- [ ] **WhatsApp numarası** - Tüm placeholder'ları güncelle:
+  - `src/routes/iletisim/+page.svelte` (satır 96-97)
+  - `src/lib/components/Footer.svelte` (satır 67)
+  - `src/lib/components/WhatsAppButton.svelte`
+
+### Müşteri Tarafında Yapılacaklar
+- [ ] **Google Business Profile** kurulumu
+  - Google My Business'a kayıt
+  - İşletme bilgilerini doğrulama
+  - Fotoğraflar ekleme
+  - Çalışma saatleri belirleme
+- [ ] **Google Search Console** doğrulama
+- [ ] **Google Analytics** entegrasyonu (opsiyonel)
+
+### Gelecekte Yapılabilecekler
+- [ ] Blog bölümü
 - [ ] Çok dilli destek (İngilizce)
 - [ ] Admin paneli
 - [ ] CRM entegrasyonu
-- [ ] Analytics entegrasyonu
+- [ ] Sentry error tracking aktifleştirme
+
+---
+
+## Pre-Launch Checklist (Final Kontroller)
+
+### Teknik Kontroller
+- [x] Build başarılı (`npm run build`)
+- [x] TypeScript hataları yok (`npm run check`)
+- [x] Tüm sayfalar yükleniyor
+- [x] İletişim formu çalışıyor
+- [x] Email gönderimi çalışıyor (Resend)
+- [x] Mobil responsive tasarım test edildi
+- [ ] Lighthouse skoru kontrolü (hedef: 90+)
+
+### SEO Kontrolleri
+- [x] Sitemap.xml erişilebilir
+- [x] Robots.txt erişilebilir
+- [x] OG image mevcut ve doğru boyutta
+- [x] Meta description tüm sayfalarda var
+- [x] Canonical URL'ler doğru
+- [ ] Google Search Console'a sitemap gönderildi
+
+### İçerik Kontrolleri
+- [ ] Telefon numaraları doğru
+- [ ] WhatsApp numaraları doğru
+- [x] Email adresleri doğru (info@sistemkentseldonusum.com)
+- [x] Adres bilgileri doğru
+- [x] Çalışma saatleri doğru
+- [x] Ekip üyeleri bilgileri güncel
+- [x] Fiyatlandırma bilgileri güncel
+
+### Güvenlik Kontrolleri
+- [x] SSL sertifikası aktif (HTTPS)
+- [x] Environment variables güvenli (Vercel)
+- [x] Form validation (frontend + backend)
+- [x] KVKK uyumlu iletişim formu
+
+### Performans
+- [x] Görseller optimize
+- [x] Lazy loading aktif
+- [x] Font preloading
+- [ ] Core Web Vitals kontrolü
+
+---
+
+## Hızlı Komutlar
+
+```bash
+# Geliştirme
+npm run dev
+
+# Build
+npm run build
+
+# TypeScript kontrolü
+npm run check
+
+# Önizleme
+npm run preview
+```
+
+---
+
+## Önemli Dosyalar
+
+| Dosya | Açıklama |
+|-------|----------|
+| `.env` | API anahtarları (local) |
+| `src/routes/api/contact/+server.ts` | Email API endpoint |
+| `src/routes/+layout.svelte` | Global layout + JSON-LD |
+| `static/og-image.jpg` | Sosyal medya paylaşım görseli |
+
+---
+
+## İletişim Bilgileri (Güncellenecek)
+
+```
+Şirket: Sistem Kentsel Dönüşüm
+Adres: Kazım Karabekir Mah. İstasyon Cad. No:523/17 Tüm Ev Plaza, Darıca/Kocaeli
+Email: info@sistemkentseldonusum.com
+Telefon: [MÜŞTERİDEN ALINACAK]
+WhatsApp: [MÜŞTERİDEN ALINACAK]
+Çalışma Saatleri: Pazartesi - Cuma: 09:00 - 18:00
+```
 
 ---
 
