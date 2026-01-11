@@ -14,7 +14,7 @@ const pages = [
 ];
 
 export async function GET() {
-	const siteUrl = 'https://sistemkentseldonusum.com';
+	const siteUrl = 'https://www.sistemkentseldonusum.com';
 	const lastmod = new Date().toISOString().split('T')[0];
 
 	const xml = `<?xml version="1.0" encoding="UTF-8"?>

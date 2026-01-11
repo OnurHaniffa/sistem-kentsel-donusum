@@ -112,14 +112,14 @@
 	<title>Ekibimiz & SSS | Sistem Kentsel Dönüşüm</title>
 	<meta name="description" content="Sistem Kentsel Dönüşüm uzman kadrosu ve sıkça sorulan sorular. Mimar, avukat, değerleme uzmanı ve eğitmenlerimizle tanışın." />
 	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-	<link rel="canonical" href="https://sistemkentseldonusum.com/ekibimiz" />
+	<link rel="canonical" href="https://www.sistemkentseldonusum.com/ekibimiz" />
 
 	<!-- Open Graph -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://sistemkentseldonusum.com/ekibimiz" />
+	<meta property="og:url" content="https://www.sistemkentseldonusum.com/ekibimiz" />
 	<meta property="og:title" content="Ekibimiz & SSS | Sistem Kentsel Dönüşüm" />
 	<meta property="og:description" content="Sistem Kentsel Dönüşüm uzman kadrosu ve sıkça sorulan sorular. Mimar, avukat, değerleme uzmanı ve eğitmenlerimizle tanışın." />
-	<meta property="og:image" content="https://sistemkentseldonusum.com/og-image.jpg" />
+	<meta property="og:image" content="https://www.sistemkentseldonusum.com/og-image.jpg" />
 	<meta property="og:site_name" content="Sistem Kentsel Dönüşüm" />
 	<meta property="og:locale" content="tr_TR" />
 
@@ -127,7 +127,7 @@
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Ekibimiz & SSS | Sistem Kentsel Dönüşüm" />
 	<meta name="twitter:description" content="Sistem Kentsel Dönüşüm uzman kadrosu ve sıkça sorulan sorular." />
-	<meta name="twitter:image" content="https://sistemkentseldonusum.com/og-image.jpg" />
+	<meta name="twitter:image" content="https://www.sistemkentseldonusum.com/og-image.jpg" />
 
 	<!-- FAQ Schema -->
 	{@html `<script type="application/ld+json">${JSON.stringify(faqSchema)}</script>`}

@@ -16,7 +16,7 @@
 <svelte:head>
 	<title>KVKK Aydınlatma Metni | Sistem Kentsel Dönüşüm</title>
 	<meta name="description" content="6698 Sayılı Kişisel Verilerin Korunması Kanunu kapsamında aydınlatma metni." />
-	<link rel="canonical" href="https://sistemkentseldonusum.com/kvkk" />
+	<link rel="canonical" href="https://www.sistemkentseldonusum.com/kvkk" />
 </svelte:head>
 
 <div class="min-h-screen bg-background">

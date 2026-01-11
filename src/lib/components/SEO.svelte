@@ -12,12 +12,12 @@
 		title,
 		description,
 		canonical = '',
-		ogImage = 'https://sistemkentseldonusum.com/og-image.jpg',
+		ogImage = 'https://www.sistemkentseldonusum.com/og-image.jpg',
 		ogType = 'website',
 		noindex = false
 	}: Props = $props();
 
-	const siteUrl = 'https://sistemkentseldonusum.com';
+	const siteUrl = 'https://www.sistemkentseldonusum.com';
 	const siteName = 'Sistem Kentsel Dönüşüm';
 	const fullCanonical = canonical ? `${siteUrl}${canonical}` : siteUrl;
 </script>

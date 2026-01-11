@@ -12,8 +12,8 @@
 		'@context': 'https://schema.org',
 		'@type': 'Organization',
 		name: 'Sistem Kentsel Dönüşüm',
-		url: 'https://sistemkentseldonusum.com',
-		logo: 'https://sistemkentseldonusum.com/logo.png',
+		url: 'https://www.sistemkentseldonusum.com',
+		logo: 'https://www.sistemkentseldonusum.com/logo.png',
 		description: 'Kentsel dönüşüm danışmanlık hizmetleri. Hukuki destek, mimari danışmanlık, gayrimenkul değerleme.',
 		address: {
 			'@type': 'PostalAddress',
@@ -34,11 +34,11 @@
 	const localBusinessSchema = {
 		'@context': 'https://schema.org',
 		'@type': 'LocalBusiness',
-		'@id': 'https://sistemkentseldonusum.com/#localbusiness',
+		'@id': 'https://www.sistemkentseldonusum.com/#localbusiness',
 		name: 'Sistem Kentsel Dönüşüm',
-		image: 'https://sistemkentseldonusum.com/og-image.jpg',
+		image: 'https://www.sistemkentseldonusum.com/og-image.jpg',
 		description: 'Kentsel dönüşüm danışmanlık hizmetleri',
-		url: 'https://sistemkentseldonusum.com',
+		url: 'https://www.sistemkentseldonusum.com',
 		email: 'info@sistemkentseldonusum.com',
 		address: {
 			'@type': 'PostalAddress',

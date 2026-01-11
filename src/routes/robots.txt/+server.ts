@@ -1,7 +1,7 @@
 export const prerender = true;
 
 export async function GET() {
-	const siteUrl = 'https://sistemkentseldonusum.com';
+	const siteUrl = 'https://www.sistemkentseldonusum.com';
 
 	const robots = `# Sistem Kentsel Dönüşüm - Robots.txt
 User-agent: *

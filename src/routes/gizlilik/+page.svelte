@@ -18,7 +18,7 @@
 <svelte:head>
 	<title>Gizlilik Politikası | Sistem Kentsel Dönüşüm</title>
 	<meta name="description" content="Sistem Kentsel Dönüşüm gizlilik politikası - Kişisel verilerinizin nasıl toplandığı, kullanıldığı ve korunduğu hakkında bilgi edinin." />
-	<link rel="canonical" href="https://sistemkentseldonusum.com/gizlilik" />
+	<link rel="canonical" href="https://www.sistemkentseldonusum.com/gizlilik" />
 </svelte:head>
 
 <div class="min-h-screen bg-background">

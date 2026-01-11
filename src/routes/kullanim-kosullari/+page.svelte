@@ -18,7 +18,7 @@
 <svelte:head>
 	<title>Kullanım Koşulları | Sistem Kentsel Dönüşüm</title>
 	<meta name="description" content="Sistem Kentsel Dönüşüm web sitesi kullanım koşulları ve şartları." />
-	<link rel="canonical" href="https://sistemkentseldonusum.com/kullanim-kosullari" />
+	<link rel="canonical" href="https://www.sistemkentseldonusum.com/kullanim-kosullari" />
 </svelte:head>
 
 <div class="min-h-screen bg-background">
